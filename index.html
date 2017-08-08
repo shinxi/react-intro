@@ -2,374 +2,315 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-
-  <title>React实战</title>
-
-  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-  <meta name="author" content="Hakim El Hattab">
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/league.css" id="theme">
-
-  <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="lib/css/zenburn.css">
-  <style>
+    <meta charset="utf-8">
+    <title>Introduction for building an app by React</title>
+    <meta name="description" content="Introduction for building an app by React">
+    <meta name="author" content="Xi Jinxin">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
     .reveal .ppt-image {
-      border-style: none;
-      box-shadow: none;
-      background-color: transparent;
-      width: 800px;
+        border-style: none;
+        box-shadow: none;
+        background-color: transparent;
+        width: 800px;
     }
-  </style>
 
-  <!-- Printing and PDF exports -->
-  <script>
+    .reveal .redux-tool__comments {
+        float: right;
+        margin-right: -101px;
+        margin-top: 20px;
+        font-size: 0.7em;
+    }
+    </style>
+    <!-- Printing and PDF exports -->
+    <script>
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
     link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
     document.getElementsByTagName('head')[0].appendChild(link);
-  </script>
-
-  <!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1><a>React Intro</a></h1>
+                <h3></h3>
+                <p>
+                    <small><a href="mailto: jinxin.xi@ge.com"></a></small>
+                </p>
+            </section>
+            <section>
+                <h2><a>Items</a></h2>
+                <ul>
+                    <li>Why React</li>
+                    <li>Quick Start</li>
+                    <li>Front-end and Back-end separation</li>
+                    <li>React + Redux + React Router</li>
+                </ul>
+            </section>
+            <section>
+                <section>
+                    <h3><a>Why React</a></h3>
+                    <ul>
+                        <li>Easy</li>
+                        <li>JSX</li>
+                        <li>Component-based Architecture</li>
+                        <li>Virtual Dom</li>
+                        <li>Learn Once, Write Anywhere</li>
+                        <li>Great Devtools</li>
+                        <li>Great community</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Easy</h3>
+                    <ul>
+                        <li>JSX</li>
+                        <li>React Component</li>
+                    </ul>
+                    <aside class="notes">
+                        Easy to learn and get started
+                    </aside>
+                </section>
+                <section>
+                    <h3>JSX</h3>
+                    <ul>
+                        <li>JSX is a preprocessor step that adds <span class="fragment highlight-green visible">XML syntax</span> to JavaScript.</li>
+                        <li>Just like XML, JSX tags have a <span class="fragment highlight-green visible">tag name</span>, <span class="fragment highlight-green visible">attributes</span>, and <span class="fragment highlight-green visible">children</span>.</li>
+                    </ul>
+                    <aside class="notes">
+                        JSX makes programming easier
+                    </aside>
+                </section>
+                <section>
+                    <h3>Sample: Hello Message</h3>
+                    <img class="ppt-image" style="width: 100%" data-src="images/hellomessage.png">
+                    <aside class="notes">
+                        JSX makes programming easier
+                    </aside>
+                </section>
+                <section>
+                    <h3>JSX Benifits</h3>
+                    <img class="ppt-image" style="width: 75%" data-src="images/jsxbefinites.png">
+                    <aside class="notes">
+                        JSX使用声明式直观的定义用户界面，除了另类的HTML标记之外，并没有引入其它任何新的概念，这也就意味着，你不需要学习第三方模板库，可以利用熟悉的JavaScript语法去构建界面，你的思维过程中其实已经不需要存在模板的概念，需要考虑的仅仅是如何用代码构建整个界面。 这种自然而直观的方式使得编程更加简单并且让代码更容易理解。
+                    </aside>
+                </section>
+                <section>
+                    <h3>Component-based Architecture</h3>
+                </section>
+                <section>
+                    <h3>Component-based Architecture - Sample</h3>
+                    <img class="ppt-image" style="width: 100%" data-src="images/componentdesign_1.png">
+                </section>
+                <section>
+                    <h3>Component-based Architecture - Sample</h3>
+                    <img class="ppt-image" style="width: 100%" data-src="images/componentdesign_2.png">
+                </section>
+                <section>
+                    <h3>Component-based Architecture - Sample</h3>
+                    <img class="ppt-image" style="width: 100%" data-src="images/componentdesign_3.png">
+                </section>
+                <section>
+                    <h3>Component-based Architecture - Benefits</h3>
+                    <ul>
+                        <li>SRP</li>
+                        <li>Loose Coupling</li>
+                        <li>Parallel Development</li>
+                        <li>Resuable Components</li>
+                        <li>Increase Maintainability/Scalability/Extensibility</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Virtual Dom</h3>
+                </section>
+                <section>
+                    <h3>Old way's Performance Tuning - Dom Scripting</h3>
+                    <ul>
+                        <li>Dom batch update from documentFragment to document</li>
+                        <li>Dom batch update at clonednode, then switch original node with cloned one</li>
+                        <li>Dom batch update at hidden node, then display the node</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Virtual Dom</h3>
+                    <img class="ppt-image" style="width: 100%" data-src="images/virtual_dom.png">
+                </section>
+                <section>
+                    <h3>Virtual Dom - Benefits</h3>
+                    <ul>
+                        <li>Good performance.</li>
+                        <li>Hand over the dirty work to the library, keep focus at business logic.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Learn Once Run Everywhere</h3>
+                </section>
+                <section>
+                    <h3>LORE - Isomorphic/Universal JavaScript - SEO</h3>
+                    <h3></h3>
+                    <img class="ppt-image" style="width: 100%" data-src="images/universal_javascript.png">
+                </section>
+                <section>
+                    <h3>LORE - Isomorphic/Universal Apps</h3>
+                    <img class="ppt-image" style="width: 80%" data-src="images/universal_apps.jpg">
+                </section>
+                <section>
+                    <h3>Great DevTools</h3>
+                </section>
+                <section>
+                    <h3>React DevTools</h3>
+                    <img class="ppt-image" style="width: 80%" data-src="images/reactdevtools.png">
+                </section>
+                <section>
+                    <h3>Redux DevTools</h3>
+                    <img class="ppt-image" style="width: 70%" data-src="images/reduxdevtools.png">
+                    <ul class="redux-tool__comments">
+                        <li>Persist state on page reloading</li>
+                        <li>Time travelling</li>
+                        <li>Skip (Cancel) actions</li>
+                        <li>Reorder actions</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>React Hot Loader</h3>
+                    <img class="ppt-image" style="width: 80%" data-src="images/reacthotloader.png">
+                </section>
+                <section>
+                    <h3>Great Community & Ecosystem</h3>
+                </section>
+                <section>
+                    <h3>Great Community & Ecosystem</h3>
+                    <img class="ppt-image" style="width: 80%" data-src="images/greatcommunity.png">
+                </section>
+                <section>
+                    <h3>Great Community & Ecosystem</h3>
+                    <img class="ppt-image" style="width: 50%" data-src="images/sitesusingreact.png">
+                </section>
+                <section>
+                    <h3>Great Community & Ecosystem</h3>
+                    <img class="ppt-image" style="width: 9lo0%" data-src="images/ecosystem.png">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Quick Start</h3>
+                    <ul>
+                        <li>Create React App</li>
+                        <li>BoilerPlate X</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Create React App</h3>
+                    <ul>
+                        <li>Built-in Webpack/dev server Configuration
+                            <ul>
+                                <li>JS, CSS, Images Loader</li>
+                                <li>Proxy</li>
+                            </ul>
+                        </li>
+                        <li>Test - Jest
+                        </li>
+                        <li>PWA</li>
+                        <li>ES6 Polyfills
+                            <ul>
+                                <li>Exponentiation Operator</li>
+                                <li>Object Rest/Spread Properties</li>
+                                <li>Dynamic import()</li>
+                                <li>Class Fields and Static Properties</li>
+                                <li>Async/Await</li>
+                                <li>Object.assign/fetch/Promise</li>
+                            </ul></li>
+                        <li>Syntax Highlighting/Lint/Debug</li>
+                    </ul>
+                </section>
+            </section>
 
-  <div class="reveal">
-
-    <!-- Any section element inside of this container is displayed as a slide -->
-    <div class="slides">
-      <section>
-        <h1><a>React实战</a></h1>
-        <h3>现代前端技术企业该怎么玩</h3>
-        <p>
-          <small>作者 <a href="http://shinxi.com">奚金鑫</a></small>
-        </p>
-      </section>
-
-      <section>
-        <section>
-          <h2><a href="http://geek.csdn.net/news/detail/114709" target="_blank">React风格的企业前端技术</a></h2>
-          <ul>
-            <li>成熟的前端框架</li>
-            <li>快速的前端工作流程</li>
-            <li>流畅的用户体验</li>
-          </ul>
-        </section>
-        <section>
-          <h3>成熟的前端JS框架是项目的支柱</h3>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Angular2</th>
-                <th>React</th>
-                <th>Vue2</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>易上手</th>
-                <th>3</th>
-                <th>4</th>
-                <th><span style="color:green">5</span></th>
-              </tr>
-              <tr>
-                <th>页面性能</th>
-                <th><span style="color:green">5</span></th>
-                <th><span style="color:green">5</span></th>
-                <th><span style="color:green">5</span></th>
-              </tr>
-              <tr>
-                <th>兼容性</th>
-                <th>4</th>
-                <th><span style="color:green">5</span></th>
-                <th>4</th>
-              </tr>
-              <tr>
-                <th>前后端同构</th>
-                <th>4</th>
-                <th><span style="color:green">5</span></th>
-                <th>3</th>
-              </tr>
-              <tr>
-                <th>移动端Native</th>
-                <th>4</th>
-                <th><span style="color:green">5</span></th>
-                <th>3</th>
-              </tr>
-              <tr>
-                <th>测试</th>
-                <th><span style="color:green">5</span></th>
-                <th><span style="color:green">5</span></th>
-                <th><span style="color:green">5</span></th>
-              </tr>
-              <tr>
-                <th>社区</th>
-                <th><span style="color:green">5</span></th>
-                <th><span style="color:green">5</span></th>
-                <th>3</th>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section>
-          <h3>成熟的前端测试框架保证产品质量</h3>
-          <img class="ppt-image" data-src="images/testframework.png">
-        </section>
-        <section>
-          <h3>工作流程从繁琐的...</h3>
-          <img class="ppt-image" data-src="images/complexworkflow.png">
-        </section>
-        <section>
-          <h3>...到流畅的工作流程</h3>
-          <img class="ppt-image" data-src="images/quickworkflow.png">
-        </section>
-        <section>
-          <h3>流畅的用户体验从设计做起</h3>
-          <img class="ppt-image" data-src="images/uxdesign.png">
-        </section>
-        <section>
-          <h3>不断优化提升用户体验</h3>
-          <img class="ppt-image" data-src="images/tuning.png">
-        </section>
-        <section>
-          <h2>资源</h2>
-          <ul>
-            <li><a href="http://geek.csdn.net/news/detail/114709" target="_blank">极客头条</a></li>
-            <li><a href="http://edu.csdn.net/course/detail/3433" target="_blank">CSDN学院</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h3>拥抱三大要素，前端产品👍👍👍</h3>
-          <h3>但是...</h3>
-        </section>
-        <section>
-          <img class="ppt-image" data-src="images/lots2learn.png">
-        </section>
-        <section data-background="images/crazy.gif">
-          <h3>知识真的是海洋</h3>
-        </section>
-      </section>
-
-      <section>
-        <h3>到底怎么玩</h3>
-      </section>
-
-      <section>
-        <h3>实战</h3>
-        <ul>
-          <li class="fragment">快速上手</li>
-          <li class="fragment">前后端分离</li>
-          <li class="fragment">React + Redux + React Router</li>
-          <li class="fragment">性能调优</li>
-        </ul>
-      </section>
-
-      <section>
-        <section>
-          <h3>快速上手</h3>
-          <ul>
-            <li>编辑器</li>
-            <li>项目结构</li>
-            <li>开发类库</li>
-            <li>测试类库</li>
-            <li>开发规范</li>
-            <li>一键开发</li>
-            <li>一键构建</li>
-          </ul>
-        </section>
-        <section>
-          <h3>BoilerPlate</h3>
-          <h3>CLI</h3>
-        </section>
-        <section>
-          <h3><a href="https://github.com/euler-ui/boilerplate" target="_blank">DEMO</a></h3>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h3>前后端分离</h3>
-        </section>
-        <section>
-          <h3>搭建前端Mock Server</h3>
-          <img class="ppt-image" style="width: 750px" data-src="images/mockserver.png">
-        </section>
-        <section>
-          <h3><a href="https://github.com/euler-ui/boilerplate" target="_blank">DEMO</a></h3>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h3>React Best Practice</h3>
-          <p>React + Redux + React Router</p>
-        </section>
-        <section>
-          <h3><a href="http://geek.csdn.net/news/detail/77995" target="_blank">React大法好</a></h3>
-          <ul>
-            <li>简单易学，上手快</li>
-            <li>JSX使编程更简单</li>
-            <li>组件化编程方式好处多</li>
-            <li>虚拟Dom技术，使得开发简单，而页面性能又好</li>
-            <li>前后端同构, 搜索引擎更友好</li>
-            <li>强大的开发工具</li>
-            <li>社区强大</li>
-          </ul>
-        </section>
-        <section>
-          <h3>组件化编程，代码松耦合，分而治之</h3>
-          <img class="ppt-image" style="width: 1280px" data-src="images/reactcomponent.png">
-        </section>
-
-        <section>
-          <h3>Virtual DOM提高页面性能</h3>
-          <img class="ppt-image" data-src="images/virtualdom.png">
-        </section>
-        <section>
-          <h3>Redux单向数据流使开发简单</h3>
-          <img class="ppt-image" style="width: 1280px" data-src="images/redux.png">
-        </section>
-        <section>
-          <h3>React Router绑定UI和URL</h3>
-          <img class="ppt-image" style="width: 650px" data-src="images/reactrouter.png">
-        </section>
-        <section>
-          <h3><a href="https://github.com/euler-ui/boilerplate" target="_blank">DEMO</a></h3>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h3>性能调优</h3>
-        </section>
-        <section>
-          <h3><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome Dev Tool</a></h3>
-          <img class="ppt-image" style="width: 1280px" data-src="images/chromedevtool.png">
-        </section>
-        <section>
-          <h3>Profile</h3>
-          <img class="ppt-image" style="width: 890px" data-src="images/profile.png">
-        </section>
-        <section>
-          <h3>Page Speed</h3>
-          <img class="ppt-image" style="width: 600px" data-src="images/pagespeed.png">
-        </section>
-        <section>
-          <h3><a>DEMO</a></h3>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h3>思考</h3>
-        </section>
-        <section>
-          <h3>实在的好处</h3>
-          <img class="ppt-image" style="width: 900px" data-src="images/goods.png">
-        </section>
-        <section>
-          <h3>好处背后的困难及现实</h3>
-          <img class="ppt-image" style="width: 700px" data-src="images/bads.png">
-        </section>
-        <section>
-          <h3>新思路</h3>
-        </section>
-        <section>
-          <h3>基于React的核心框架 + 传统页面开发</h3>
-          <img class="ppt-image" style="width: 900px" data-src="images/news.png">
-        </section>
-        <section>
-          <h3>页面模块化加快开发效率</h3>
-          <img class="ppt-image" style="width: 1280px" data-src="images/newui.png">
-        </section>
-        <section>
-          <h3>React风格+低成本</h3>
-          <img class="ppt-image" style="width: 700px" data-src="images/newsgoods.png">
-        </section>
-      </section>
-      <section>
-          <h1>Q&A</h1>
-      </section>
-      <section>
-          <h3>资源</h3>
-          <ul>
-            <li><a href="https://github.com/petehunt/react-howto" target="_blank">React How To</a></li>
-            <li><a href="https://github.com/petehunt/webpack-howto" target="_blank">Webpack How To</a></li>
-            <li><a href="https://facebook.github.io/react/docs/hello-world.html" target="_blank">React Quck Start</a></li>
-            <li><a href="http://redux.js.org/" target="_blank">Redux Intro</a></li>
-            <li><a href="https://github.com/reactjs/react-router-tutorial" target="_blank">React Router Tutorial</a></li>
-            <li><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome Dev Tools</a></li>
-            <li><a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">Page Speed</a></li>
-
-            <li><a href="https://github.com/euler-ui/boilerplate" target="_blank">Euler BoilerPlate</a></li>
-            <li><a href="http://geek.csdn.net/news/detail/114709" target="_blank">React风格的企业前端技术</a></li>
-            <li><a href="http://geek.csdn.net/news/detail/77995" target="_blank">为什么选用React作为云平台前端框架</a></li>
-          </ul>
-      </section>
-
+            <section>
+                <section>
+                    <h3>Front-end and Back-end separation</h3>
+                </section>
+                <section>
+                    <h3>Build Front-end Mock Server</h3>
+                    <img class="ppt-image" style="width: 750px" data-src="images/mockserver.png">
+                </section>
+            </section>
+                        <section>
+                <section>
+                    <h3>React Best Practice</h3>
+                    <p>React + Redux + React Router</p>
+                </section>
+                <section>
+                    <h3>Organizing application state with Redux</h3>
+                    <img class="ppt-image" style="width: 1280px" data-src="images/redux_2.png">
+                </section>
+                <section>
+                    <h3>Organizing application state with Redux - Sample</h3>
+                    <img class="ppt-image" style="width: 1280px" data-src="images/redux.png">
+                </section>
+                <section>
+                    <h3>Bind UI & URL using React Router </h3>
+                    <img class="ppt-image" style="width: 650px" data-src="images/reactrouter.png">
+                </section>
+            </section>
+        </div>
     </div>
-
-  </div>
-
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
-
-  <script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
     // More info https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-      transition: 'convex', // none/fade/slide/convex/concave/zoom
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
 
-      // More info https://github.com/hakimel/reveal.js#dependencies
-      dependencies: [{
-        src: 'lib/js/classList.js',
-        condition: function() {
-          return !document.body.classList;
-        }
-      }, {
-        src: 'plugin/markdown/marked.js',
-        condition: function() {
-          return !!document.querySelector('[data-markdown]');
-        }
-      }, {
-        src: 'plugin/markdown/markdown.js',
-        condition: function() {
-          return !!document.querySelector('[data-markdown]');
-        }
-      }, {
-        src: 'plugin/highlight/highlight.js',
-        async: true,
-        callback: function() {
-          hljs.initHighlightingOnLoad();
-        }
-      }, {
-        src: 'plugin/zoom-js/zoom.js',
-        async: true
-      }, {
-        src: 'plugin/notes/notes.js',
-        async: true
-      }]
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
     });
-  </script>
-
+    </script>
 </body>
 
 </html>
